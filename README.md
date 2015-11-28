@@ -19,3 +19,4 @@ $ git status
 #
 noting to commit (create/copy files and use "git add" to track)
 ```
+如上，第一行`#`提示所在的分支，例子中是master分支。`Untracked files`中显示了未提交的文件信息。只要曾经对Git的工作树或仓库进行操作，`git status`命令的显示结果就会发生变化。
