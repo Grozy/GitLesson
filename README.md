@@ -36,3 +36,21 @@ $git status
 #
 ```
 将README.md文件加入暂存区后，`git status`命令的显示结果发生了变化，README.md文件显示在Changes to commited中了。
+###git commit -- 保存仓库的历史记录
+`git commit`命令可以将当前暂存区中的文件实际保存到仓库的历史记录中。通过这些记录，我们就可以在工作树中恢复文件。
+```
+$git commit -m "First commit"
+```
+`-m`参数后的"First commit"称作提交信息，是对这个提交的概述。
+如果想要详细提交信息，直接执行`git commit`命令。执行后编辑器就会启动。
+` 第一行：用一行文字简述提交的更改内容
+` 第二行：空行
+` 第三行：技术更改的原因和详细内容
+在以#标识的注释Changes to be commited栏中，可以查看本次提交中包含的文件。将提交信息按格式记述完毕后，保存并关闭编辑器。以#标识注释的行不必删除。
+执行完`git commit`命令后再查看当前状态。
+```
+$ git status
+# On branch master
+nothing to commit, working directory clean
+```
+当前工作树处于刚刚完成提交更新的状态，所以结果显示没有更改。
