@@ -21,3 +21,18 @@ $ git status
 noting to commit (create/copy files and use "git add" to track)
 ```
 如上，第一行`#`提示所在的分支，例子中是master分支。`Untracked files`中显示了未提交的文件信息。只要曾经对Git的工作树或仓库进行操作，`git status`命令的显示结果就会发生变化。
+###git add -- 向暂存区中添加文件
+如果只是用Git仓库的工作树创建了文件或文件内容发生了修改，那么该文件并不会被记入Git仓库的版本管理对象中。因此我们用`git status`命令显示发生变化的文件，它们就会显示在Untracked files里。要想让文件成为Git仓库的管理对象，就需要用`git add`命令将其加入暂存区(Stage或者Index)中。暂存区是提交之前的一个临时去。
+```
+$git add README.md 
+$git status
+# On branch Master
+#
+# Initial commit
+# 
+# Changes to committed:
+#
+#	new file:  README.md
+#
+```
+将README.md文件加入暂存区后，`git status`命令的显示结果发生了变化，README.md文件显示在Changes to commited中了。
