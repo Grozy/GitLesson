@@ -54,3 +54,4 @@ $ git status
 nothing to commit, working directory clean
 ```
 当前工作树处于刚刚完成提交更新的状态，所以结果显示没有更改。
+如果想要终止提交，将填写信息留空并直接关闭编辑器，随后提交会被终止。
