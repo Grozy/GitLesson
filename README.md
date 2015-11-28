@@ -59,7 +59,7 @@ nothing to commit, working directory clean
 ```
 $ git log
  
-commit commit的id
+commit 提交的哈希值
 Author 提交的人，包括邮箱
 	提交的信息
 ```
@@ -71,3 +71,9 @@ $git log -p
 ```
 执行命令之后，就可以查看提交的详细内容。
 `git log --graph`通过加上graph参数，就可以看到图形化的log信息。
+###git diff -- 查看文件修改前后的差别
+git diff 命令可以查看工作树、暂存区、最新提交之间的差别。
+```
+$ git diff
+```
+没有add心文件之前，`git diff`只会显示工作树与最新的提交状态之间的差别。"+"表示新增行，"-"表示删除行
