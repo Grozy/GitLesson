@@ -78,3 +78,18 @@ git diff 命令可以查看工作树、暂存区、最新提交之间的差别�
 $ git diff
 ```
 没有add心文件之前，`git diff`只会显示工作树与最新的提交状态之间的差别。"+"表示新增行，"-"表示删除行
+```python
+def func(params):
+	print(params)
+
+class a(Object):
+	func init():
+		print("init")
+```
+```Objective-C
+@interface Person :NSObject
+
+@property (nonotmiac,copy) NSString *name;
+
+@end
+```
