@@ -93,3 +93,7 @@ class a(Object):
 
 @end
 ```
+
+- [ ]上传图片
+- [x]学习新命令
+- [ ]test
