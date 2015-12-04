@@ -89,7 +89,7 @@ class a(Object):
 ```Objective-C
 @interface Person :NSObject
 
-@property (nonotmiac,copy) NSString *name;
+@property (nonatomic,copy) NSString *name;
 
 @end
 ```
